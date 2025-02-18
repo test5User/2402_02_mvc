@@ -14,4 +14,11 @@ public class DataBase {
     public static boolean isContainsByFio(String fio) {
         return users.stream().anyMatch(it -> it.getFio().equalsIgnoreCase(fio));
     }
+
+    public static User findUserById(int id) {
+        return users.stream()
+                .filter(user -> user.getId() == id)
+                .findFirst()
+                .orElse(null);
+    }
 }
