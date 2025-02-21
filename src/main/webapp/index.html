@@ -16,5 +16,18 @@
         ID: <input name="id"><br>
         <input type="submit" value="Search">
     </form>
+
+    <h1>Search by Criteria</h1>
+    <p>Search by:</p>
+    <form action="/criteria" method="post">
+        Id: <input type="radio" name="criteria" value="id" checked>
+        Range: <input type="radio" name="criteria" value="range"><br>
+
+        ID: <input name="id" placeholder="Value for Search by Single Id"><br>
+
+        From: <input name="fromId" placeholder="Value for Search From"><br>
+        To: <input name="toId" placeholder="Value for Search To"><br>
+        <input type="submit" value="Search">
+    </form>
 </body>
 </html>
